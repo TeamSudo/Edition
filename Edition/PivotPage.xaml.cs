@@ -3,9 +3,11 @@ using Edition.Data;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data.Services.Client;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel.Resources;
 using Windows.Foundation;
@@ -156,6 +158,7 @@ namespace Edition
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
+            this.pivot.Title = "EDITION";
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -163,6 +166,7 @@ namespace Edition
             this.navigationHelper.OnNavigatedFrom(e);
         }
 
+        
         #endregion
     }
 }

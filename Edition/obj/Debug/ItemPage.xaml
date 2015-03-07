@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     DataContext="{Binding DefaultViewModel.Item, RelativeSource={RelativeSource Self}}"
-    d:DataContext="{Binding Groups[0].Items[0], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
+    d:DataContext="{Binding Groups[0].Items[0], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:NewsDataSource}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Transitions>
         <TransitionCollection>
@@ -32,9 +32,12 @@
         </Grid.RowDefinitions>
 
         <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock x:Uid="Header" Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+        <StackPanel x:Name="stackpanel" Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock x:Name="header" x:Uid="Header" Text="EDITION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
             <TextBlock Text="{Binding Title}" Style="{ThemeResource HeaderTextBlockStyle}" Margin="0,-6.5,0,26.5" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" />
+            <TextBlock Text="{Binding Date}" Style="{ThemeResource SubheaderTextBlockStyle}" Height="53" Margin="0,0,-0.167,0"></TextBlock>
+            <TextBlock Text="{Binding Description}" Style="{ThemeResource BodyTextBlockStyle}" Margin="0,0,9.833,0"></TextBlock>
+            <TextBlock Text="Read More" Style="{ThemeResource BaseTextBlockStyle}" Margin="0,10"></TextBlock>
         </StackPanel>
 
         <!-- 

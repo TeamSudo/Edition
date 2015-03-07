@@ -104,6 +104,7 @@ namespace Edition
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
+            this.header.Text = "EDITION";
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

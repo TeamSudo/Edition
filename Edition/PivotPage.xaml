@@ -27,7 +27,7 @@
                 Margin="19,14.5,0,0"
                 Header="Morning"
                 DataContext="{Binding FirstGroup}"
-                d:DataContext="{Binding Groups[0], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
+                d:DataContext="{Binding Groups[0], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:NewsDataSource}}"
                 CommonNavigationTransitionInfo.IsStaggerElement="True">
                 <!--Double line list with text wrapping-->
                 <ListView
@@ -64,7 +64,7 @@
                 Margin="19,14.5,0,0"
                 Header="Evening"
                 DataContext="{Binding SecondGroup}"
-                d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
+                d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:NewsDataSource}}">
                 <!--Double line list no text wrapping-->
                 <ListView
                     ItemsSource="{Binding Items}"
@@ -95,7 +95,7 @@
 
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Uid="RefreshAppBarButton" x:Name="RefreshAppBarButton" Label="add" Icon="Refresh" Click="RefreshAppBarButton_Click" />
+            <AppBarButton x:Uid="RefreshAppBarButton" x:Name="RefreshAppBarButton" Label="refresh" Icon="Refresh" Click="RefreshAppBarButton_Click" />
         </CommandBar>
     </Page.BottomAppBar>
 </Page>

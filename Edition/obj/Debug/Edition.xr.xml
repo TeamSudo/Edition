@@ -3,10 +3,11 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="DefaultViewModel" />
     <RootPropertyPathName Name="Item" />
+    <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="SecondGroup" />
     <RootPropertyPathName Name="Items" />
-    <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="FirstGroup" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -52,6 +53,7 @@
       <RootProperty Name="Style" />
       <RootProperty Name="Margin" />
       <RootProperty Name="CharacterSpacing" />
+      <RootProperty Name="Height" />
       <RootProperty Name="TextWrapping" />
     </RootType>
     <RootType FullName="Edition.ItemPage" />

@@ -1,5 +1,9 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\shubheksha jalan\documents\visual studio 2013\projects\edition\edition\obj\debug\intermediatexaml\edition.exe" HashGuid="a132af32-52f4-99ea-c2d7-abc2fc75b4c1" />
+    <LocalAssembly PathName="c:\users\shubheksha jalan\documents\visual studio 2013\projects\edition\edition\obj\debug\intermediatexaml\edition.exe" HashGuid="f4178f31-9a7b-348f-bf9b-5e798f9f0624" />
+    <ReferenceAssembly PathName="c:\users\shubheksha jalan\documents\visual studio 2013\projects\edition\packages\microsoft.data.edm.5.6.3\lib\portable-net45+wp8+win8+wpa\microsoft.data.edm.dll" HashGuid="3909eeff-128b-381c-a99e-630f720eb4cc" />
+    <ReferenceAssembly PathName="c:\users\shubheksha jalan\documents\visual studio 2013\projects\edition\packages\microsoft.data.odata.5.6.3\lib\portable-net45+wp8+win8+wpa\microsoft.data.odata.dll" HashGuid="fbd79441-50af-6c45-bcde-2268f3d026aa" />
+    <ReferenceAssembly PathName="c:\users\shubheksha jalan\documents\visual studio 2013\projects\edition\packages\microsoft.data.services.client.5.6.3\lib\portable-net45+wp8+win8+wpa\microsoft.data.services.client.dll" HashGuid="03101627-e876-b6c6-dfd1-96d6a18fe126" />
+    <ReferenceAssembly PathName="c:\users\shubheksha jalan\documents\visual studio 2013\projects\edition\packages\system.spatial.5.6.3\lib\portable-net45+wp8+win8+wpa\system.spatial.dll" HashGuid="96704a47-99c4-8e33-2d18-73afd366aeef" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

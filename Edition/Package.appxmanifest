@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="a5b45953-e2f3-45c6-8b28-1b79a2bf9e37" Publisher="CN=Shubheksha Jalan" Version="0.1.0.0" />
-  <mp:PhoneIdentity PhoneProductId="a5b45953-e2f3-45c6-8b28-1b79a2bf9e37" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="7e370590-f2d2-44e5-aced-f30004764821" Publisher="CN=Shubheksha Jalan" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="7e370590-f2d2-44e5-aced-f30004764821" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Edition</DisplayName>
     <PublisherDisplayName>Shubheksha Jalan</PublisherDisplayName>
@@ -21,11 +21,6 @@
         </m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
       </m3:VisualElements>
-      <Extensions>
-        <Extension Category="windows.backgroundTasks">
-          <BackgroundTasks />
-        </Extension>
-      </Extensions>
     </Application>
   </Applications>
   <Capabilities>

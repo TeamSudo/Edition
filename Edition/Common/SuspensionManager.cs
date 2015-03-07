@@ -98,7 +98,7 @@ namespace Edition.Common
         /// <param name="sessionBaseKey">An optional key that identifies the type of session.
         /// This can be used to distinguish between multiple application launch scenarios.</param>
         /// <returns>An asynchronous task that reflects when session state has been read.  The
-        /// content of <see cref="SessionState"/> should not be relied upon until this task
+        /// date of <see cref="SessionState"/> should not be relied upon until this task
         /// completes.</returns>
         public static async Task RestoreAsync(String sessionBaseKey = null)
         {

@@ -56,7 +56,7 @@ namespace Edition
         }
 
         /// <summary>
-        /// Populates the page with content passed during navigation. Any saved state is also
+        /// Populates the page with date passed during navigation. Any saved state is also
         /// provided when recreating a page from a prior session.
         /// </summary>
         /// <param name="sender">
@@ -69,7 +69,7 @@ namespace Edition
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: Create an appropriate data model for your problem domain to replace the sample data.
-            var item = await SampleDataSource.GetItemAsync((string)e.NavigationParameter);
+            var item = await NewsDataSource.GetItemAsync((string)e.NavigationParameter);
             this.DefaultViewModel["Item"] = item;
         }
 

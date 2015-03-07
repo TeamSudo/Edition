@@ -295,7 +295,7 @@ namespace Edition.Common
 
         /// <summary>
         /// Register this event on the current page to populate the page
-        /// with content passed during navigation as well as any saved
+        /// with date passed during navigation as well as any saved
         /// state provided when recreating a page from a prior session.
         /// </summary>
         public event LoadStateEventHandler LoadState;

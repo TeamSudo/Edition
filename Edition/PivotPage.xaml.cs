@@ -61,7 +61,7 @@ namespace Edition
         }
 
         /// <summary>
-        /// Populates the page with content passed during navigation. Any saved state is also
+        /// Populates the page with date passed during navigation. Any saved state is also
         /// provided when recreating a page from a prior session.
         /// </summary>
         /// <param name="sender">
@@ -74,7 +74,7 @@ namespace Edition
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            var sampleDataGroup = await SampleDataSource.GetGroupAsync("Group-1");
+            var sampleDataGroup = await NewsDataSource.GetGroupAsync("Group-1");
             this.DefaultViewModel[FirstGroupName] = sampleDataGroup;
         }
 
@@ -94,12 +94,12 @@ namespace Edition
         /// <summary>
         /// Adds an item to the list when the app bar button is clicked.
         /// </summary>
-        private void AddAppBarButton_Click(object sender, RoutedEventArgs e)
+        private void RefreshAppBarButton_Click(object sender, RoutedEventArgs e)
         {
             string groupName = this.pivot.SelectedIndex == 0 ? FirstGroupName : SecondGroupName;
-            var group = this.DefaultViewModel[groupName] as SampleDataGroup;
+            var group = this.DefaultViewModel[groupName] as NewsDataGroup;
             var nextItemId = group.Items.Count + 1;
-            var newItem = new SampleDataItem(
+            var newItem = new NewsDataItem(
                 string.Format(CultureInfo.InvariantCulture, "Group-{0}-Item-{1}", this.pivot.SelectedIndex + 1, nextItemId),
                 string.Format(CultureInfo.CurrentCulture, this.resourceLoader.GetString("NewItemTitle"), nextItemId),
                 string.Empty,
@@ -122,7 +122,7 @@ namespace Edition
         {
             // Navigate to the appropriate destination page, configuring the new page
             // by passing required information as a navigation parameter
-            var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
+            var itemId = ((NewsDataItem)e.ClickedItem).ID;
             if (!Frame.Navigate(typeof(ItemPage), itemId))
             {
                 throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
@@ -130,11 +130,11 @@ namespace Edition
         }
 
         /// <summary>
-        /// Loads the content for the second pivot item when it is scrolled into view.
+        /// Loads the date for the second pivot item when it is scrolled into view.
         /// </summary>
         private async void SecondPivot_Loaded(object sender, RoutedEventArgs e)
         {
-            var sampleDataGroup = await SampleDataSource.GetGroupAsync("Group-2");
+            var sampleDataGroup = await NewsDataSource.GetGroupAsync("Group-2");
             this.DefaultViewModel[SecondGroupName] = sampleDataGroup;
         }
 

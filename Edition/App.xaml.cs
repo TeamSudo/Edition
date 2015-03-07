@@ -55,7 +55,7 @@ namespace Edition
 
             Frame rootFrame = Window.Current.Content as Frame;
 
-            // Do not repeat app initialization when the Window already has content,
+            // Do not repeat app initialization when the Window already has date,
             // just ensure that the window is active.
             if (rootFrame == null)
             {
@@ -115,7 +115,7 @@ namespace Edition
         }
 
         /// <summary>
-        /// Restores the content transitions after the app has launched.
+        /// Restores the date transitions after the app has launched.
         /// </summary>
         private void RootFrame_FirstNavigated(object sender, NavigationEventArgs e)
         {

@@ -20,12 +20,12 @@
     </Page.Transitions>
 
     <Grid>
-        <Pivot x:Uid="Pivot" Title="MY APPLICATION" x:Name="pivot" CommonNavigationTransitionInfo.IsStaggerElement="True">
+        <Pivot x:Uid="Pivot" Title="EDITION" x:Name="pivot" CommonNavigationTransitionInfo.IsStaggerElement="True">
             <!--Pivot item one-->
-            <PivotItem
-                x:Uid="PivotItem1"
+            <PivotItem x:Name="MorningEditionPivot"
+                x:Uid="MoriningEditionPivot"
                 Margin="19,14.5,0,0"
-                Header="first"
+                Header="Morning"
                 DataContext="{Binding FirstGroup}"
                 d:DataContext="{Binding Groups[0], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
                 CommonNavigationTransitionInfo.IsStaggerElement="True">
@@ -59,10 +59,10 @@
             </PivotItem>
 
             <!--Pivot item two-->
-            <PivotItem
-                x:Uid="PivotItem2"
+            <PivotItem x:Name="EveningEditionPivot"
+                x:Uid="EveningEditionPivot"
                 Margin="19,14.5,0,0"
-                Header="second"
+                Header="Evening"
                 DataContext="{Binding SecondGroup}"
                 d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
                 <!--Double line list no text wrapping-->
@@ -95,11 +95,7 @@
 
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Uid="AddAppBarButton" x:Name="AddAppBarButton" Label="add" Icon="Add" Click="AddAppBarButton_Click" />
-            <CommandBar.SecondaryCommands>
-                <AppBarButton x:Uid="SecondaryButton1" x:Name="SecondaryButton1" Label="secondary command 1" />
-                <AppBarButton x:Uid="SecondaryButton2" x:Name="SecondaryButton2" Label="secondary command 2" />
-            </CommandBar.SecondaryCommands>
+            <AppBarButton x:Uid="RefreshAppBarButton" x:Name="RefreshAppBarButton" Label="add" Icon="Refresh" Click="RefreshAppBarButton_Click" />
         </CommandBar>
     </Page.BottomAppBar>
 </Page>
